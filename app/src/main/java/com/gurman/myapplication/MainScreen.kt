@@ -40,6 +40,7 @@ class MainScreen : Screen {
                         .verticalScroll(rememberScrollState())
                 ) {
                     Text("Hello test!!!")
+                    OutlinedButton(onClick = { navigator.push(OtherCollectionScreen()) }) { Text("OtherCollection") }
                     OutlinedButton(onClick = { navigator.push(TestCoroutineScreen()) }) { Text("Coroutine") }
                     OutlinedButton(onClick = { navigator.push(SwipeToRevealScreen5()) }) { Text("SwipeToRevealScreen5") }
                     OutlinedButton(onClick = { navigator.push(BottomSheetScreen()) }) { Text("BottomSheetScreen") }
